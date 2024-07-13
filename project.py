@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
 # Memuat dataset
-df = pd.read_csv('Dataset/dfClean.csv')
+df = pd.read_csv('Dataset/df_cleaned.csv')
 
 # Memisahkan fitur dan label
 X = df.drop(columns=['target'])
