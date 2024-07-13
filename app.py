@@ -24,7 +24,7 @@ scaler = MinMaxScaler()
 X_smote = scaler.fit_transform(X_smote)
 
 # Load model
-model = pickle.load(open('Model/rf_model_normalisasi.pkl', 'rb'))
+model = pickle.load(open('Model/knn_model_normalisasi.pkl', 'rb'))
 
 #Evaluation Model
 y_pred = model.predict(X_smote)
