@@ -216,16 +216,16 @@ with tab1:
             result = ":green[**Healthy**]"
             desc = "Menunjukkan bahwa pengguna tidak memiliki penyakit jantung."
         elif prediction == 1:
-            result = ":orange[**Heart Disease Level 1**]"
+            result = ":orange[**Heart Disease level 1**]"
             desc = "Menunjukkan bahwa pengguna memiliki penyakit jantung tingkat ringan. Biasanya diartikan sebagai gejala awal penyakit jantung."
         elif prediction == 2:
-            result = ":orange[**Heart Disease Level 2**]"
+            result = ":orange[**Heart Disease level 2**]"
             desc = "Menunjukkan bahwa pengguna memiliki penyakit jantung tingkat sedang. Biasanya diartikan sebagai penyakit jantung yang sudah berkembang. Gejala dan risiko akan bertambah berat jika tidak segera ditangani."
         elif prediction == 3:
-            result = ":red[**Heart Disease Level 3**]"
+            result = ":red[**Heart Disease level 3**]"
             desc = "Menunjukkan bahwa pengguna memiliki penyakit jantung tingkat berat. Biasanya diartikan sebagai penyakit jantung yang sudah parah dan memerlukan penanganan segera. Lebih disarankan segera perawatan medis dan intensif."
         elif prediction == 4:
-            result = ":red[**Heart Disease Level 4**]"
+            result = ":red[**Heart Disease level 4**]"
             desc = "Menunjukkan bahwa pengguna memiliki penyakit jantung tingkat sangat berat. Biasanya diartikan sebagai penyakit jantung yang sudah sangat parah dan mempunyai risiko yang sangat tinggi. Sangat memerlukan perawatan yang sangat intensif."
         
         # show prediction
@@ -274,13 +274,13 @@ with tab2:
             if prediction == 0:
                 result = "Healthy"
             elif prediction == 1:
-                result = "Heart Disease Level 1"
+                result = "Heart Disease level 1"
             elif prediction == 2:
-                result = "Heart Disease Level 2"
+                result = "Heart Disease level 2"
             elif prediction == 3:
-                result = "Heart Disease Level 3"
+                result = "Heart Disease level 3"
             elif prediction == 4:
-                result = "Heart Disease Level 4"
+                result = "Heart Disease level 4"
             result_arr.append(result)
 
         uploaded_result = pd.DataFrame({"Prediction": result_arr})
